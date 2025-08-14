@@ -1,1 +1,386 @@
-# Gaurav-malik007.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedNotes | Premium MBBS Study Materials</title>
+    <meta name="description" content="High-quality digital medical notes created by an Indian MBBS student. Perfect for medical students looking for concise, well-organized study materials.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6",
+                        secondary: "#1e40af",
+                        accent: "#10b981"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-book-medical text-2xl text-primary"></i>
+                <h1 class="text-xl font-bold text-gray-800">MedNotes</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-primary font-medium">Home</a>
+                <a href="#notes" class="text-gray-700 hover:text-primary font-medium">Notes</a>
+                <a href="#about" class="text-gray-700 hover:text-primary font-medium">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary font-medium">Reviews</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-700 hover:text-primary">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Premium MBBS Study Notes</h2>
+                <p class="text-lg text-gray-600 mb-6">Created by an Indian MBBS student, for medical students. Concise, well-organized, and designed to help you ace your exams.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#notes" class="bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">Browse Notes</a>
+                    <a href="#about" class="border border-primary text-primary hover:bg-blue-50 font-medium py-3 px-6 rounded-lg transition duration-300 text-center">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://picsum.photos/600/400?random=10" alt="Medical student studying with MedNotes" class="rounded-lg shadow-xl w-full" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Notes Section -->
+    <section id="notes" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Study Notes</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">High-quality digital notes covering all major MBBS subjects. Available for instant download after purchase.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Note 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition duration-300">
+                    <img src="https://picsum.photos/400/250?random=11" alt="Anatomy Notes" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Anatomy Complete Notes</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive notes covering all anatomy topics with diagrams and mnemonics.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-primary">₹299</span>
+                            <button class="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Note 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition duration-300">
+                    <img src="https://picsum.photos/400/250?random=12" alt="Physiology Notes" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Physiology Simplified</h3>
+                        <p class="text-gray-600 mb-4">Easy-to-understand physiology concepts with flowcharts and clinical correlations.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-primary">₹249</span>
+                            <button class="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Note 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition duration-300">
+                    <img src="https://picsum.photos/400/250?random=13" alt="Pharmacology Notes" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pharmacology Mastery</h3>
+                        <p class="text-gray-600 mb-4">Drug classifications, mechanisms, and side effects organized for quick revision.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-primary">₹349</span>
+                            <button class="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary hover:bg-secondary text-white font-medium py-3 px-8 rounded-lg transition duration-300">View All Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://picsum.photos/500/400?random=14" alt="MBBS Student Creator" class="rounded-lg shadow-md w-full" loading="lazy">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About the Creator</h2>
+                    <p class="text-gray-600 mb-4">Hello! I'm an MBBS student from India who understands the challenges of medical school. I created these notes to help fellow students save time and study more effectively.</p>
+                    <p class="text-gray-600 mb-4">Each set of notes is carefully crafted from trusted sources, organized logically, and includes mnemonics and diagrams to enhance understanding and retention.</p>
+                    <p class="text-gray-600 mb-6">My goal is to provide affordable, high-quality study materials that make medical education more accessible.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center flex-1">
+                            <i class="fas fa-book-open text-2xl text-primary mb-2"></i>
+                            <h4 class="font-bold text-gray-800">Comprehensive</h4>
+                            <p class="text-sm text-gray-600">Covers all key topics</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center flex-1">
+                            <i class="fas fa-bolt text-2xl text-primary mb-2"></i>
+                            <h4 class="font-bold text-gray-800">Time-Saving</h4>
+                            <p class="text-sm text-gray-600">Concise yet complete</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center flex-1">
+                            <i class="fas fa-rupee-sign text-2xl text-primary mb-2"></i>
+                            <h4 class="font-bold text-gray-800">Affordable</h4>
+                            <p class="text-sm text-gray-600">Student-friendly prices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Students Say</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Feedback from medical students who have used MedNotes</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100?random=15" alt="Student" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Rahul Sharma</h4>
+                            <p class="text-sm text-gray-600">3rd Year MBBS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"These anatomy notes saved me so much time! The diagrams are excellent and the mnemonics are really helpful for memorization."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100?random=16" alt="Student" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Priya Patel</h4>
+                            <p class="text-sm text-gray-600">2nd Year MBBS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The physiology notes are so well organized. I went from barely passing to scoring in the top 10% of my class!"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100?random=17" alt="Student" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Amit Kumar</h4>
+                            <p class="text-sm text-gray-600">Final Year MBBS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Wish I had found these notes earlier in my MBBS journey. The pharmacology notes especially helped me understand drug mechanisms better."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary p-8 text-white">
+                        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                        <p class="mb-6">Have questions about our notes? Want to request a specific subject? Get in touch!</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-4"></i>
+                                <span>contact@mednotes.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-4"></i>
+                                <span>+91 98765 43210</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-4"></i>
+                                <span>Medical College Campus, India</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex space-x-4">
+                            <a href="#" class="text-white hover:text-gray-200">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-200">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-200">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-book-medical text-2xl text-primary"></i>
+                        <h3 class="text-xl font-bold">MedNotes</h3>
+                    </div>
+                    <p class="text-gray-400">Premium MBBS study notes created by an Indian medical student to help you excel in your exams.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#notes" class="text-gray-400 hover:text-white transition">Notes</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Reviews</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Subjects</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Anatomy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Physiology</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Biochemistry</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pharmacology</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pathology</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on new notes and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none">
+                        <button type="submit" class="bg-primary hover:bg-secondary px-4 py-2 rounded-r">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 MedNotes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample data for notes (can be expanded)
+        const notes = [
+            {
+                id: 1,
+                title: "Anatomy Complete Notes",
+                description: "Comprehensive notes covering all anatomy topics with diagrams and mnemonics.",
+                price: 299,
+                image: "https://picsum.photos/400/250?random=11"
+            },
+            {
+                id: 2,
+                title: "Physiology Simplified",
+                description: "Easy-to-understand physiology concepts with flowcharts and clinical correlations.",
+                price: 249,
+                image: "https://picsum.photos/400/250?random=12"
+            },
+            {
+                id: 3,
+                title: "Pharmacology Mastery",
+                description: "Drug classifications, mechanisms, and side effects organized for quick revision.",
+                price: 349,
+                image: "https://picsum.photos/400/250?random=13"
+            }
+        ];
+
+        // Cart functionality
+        let cart = [];
+        
+        // Add to cart function
+        function addToCart(noteId) {
+            const note = notes.find(item => item.id === noteId);
+            if (note) {
+                cart.push(note);
+                alert(`${note.title} added to cart!`);
+                // In a real implementation, you would update the cart UI here
+            }
+        }
+
+        // Initialize event listeners for add to cart buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('[data-note-id]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const noteId = parseInt(this.getAttribute('data-note-id'));
+                    addToCart(noteId);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
